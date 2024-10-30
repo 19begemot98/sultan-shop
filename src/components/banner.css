@@ -1,0 +1,22 @@
+.banner {
+    background-image: url('/banner.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Цвет текста */
+    text-align: center; /* Центрируем текст */
+  }
+  
+  .title {
+    font-size: 3rem; /* Размер заголовка */
+    margin: 0; /* Убираем отступы */
+  }
+  
+  .subtitle {
+    font-size: 1.5rem; /* Размер подзаголовка */
+    margin-top: 10px; /* Отступ сверху для подзаголовка */
+  }
