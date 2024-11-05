@@ -1,0 +1,94 @@
+// header.scss
+.header {
+  width: 80%;
+  margin: 0 auto;
+}
+  
+    .contactInfo {
+      margin-left: 10px;
+      display: flex;
+  
+      flex-direction: column;
+      justify-content: center;
+      height: 34px;
+  }
+  
+  
+    .nav {
+      // Стили для навигации
+      display: flex;
+      a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+        &:hover {
+          color: #007bff;
+        }
+      }
+  
+      .logo {
+        // Стили для логотипа
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+  
+    .actions {
+      // Стили для действий (кнопки, поиск, корзина)
+      display: flex;
+      align-items: center;
+  
+      .button {
+        // Общие стили для кнопок
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 10px;
+        border-radius: 4px;
+        font-weight: bold;
+  
+        &.catalogButton {
+          background-color: #007bff;
+          color: white;
+        }
+  
+        &.priceListButton {
+          background-color: #28a745;
+          color: white;
+        }
+      }
+  
+      .search {
+        // Стили для поиска
+        margin-right: 10px;
+  
+        .searchInput {
+          padding: 10px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+        }
+      }
+  
+      .callLink {
+        // Стили для ссылки "Заказать звонок"
+        color: #007bff;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      .cart {
+        // Стили для корзины
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  
+  
