@@ -1,0 +1,22 @@
+.catalogButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc50;  
+  color: #fff;  
+  border: 2px solid #ffcc50;  
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 80px;  
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #d48800;  
+    color: #fff; 
+  }
+}
+
+.catalogButton a {
+  size:18px;
+  text-decoration: none;  
+}
