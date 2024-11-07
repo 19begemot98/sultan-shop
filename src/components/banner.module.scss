@@ -1,14 +1,14 @@
 .banner {
   display: flex;
   align-items: center;
-  justify-content: flex-start;  /* Сдвигаем все влево */
+  justify-content: flex-start;  
   position: relative;
   height: 400px;
   overflow: hidden;
   flex-wrap: wrap;
-  padding-left: 30px;  /* Добавляем отступ слева для всего контента */
+  padding-left: 30px;  
 
-  /* Четкая картинка без размытия */
+ 
   .banner__image {
     position: absolute;
     top: 0;
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    transform: scaleX(-1);  /* Отражаем картинку по горизонтали */
+    transform: scaleX(-1); 
     object-fit: cover;
   }
 
@@ -25,16 +25,16 @@
     z-index: 1;
     color: #fff;
     max-width: 50%;
-    text-align: left;  /* Выравниваем текст по левому краю */
+    text-align: left;  
     padding: 20px;
     
     h1 {
-      font-size: 2.5rem;  /* Уменьшаем размер шрифта */
+      font-size: 2.5rem;  
       margin: 0;
     }
 
     p {
-      font-size: 1rem;  /* Уменьшаем размер шрифта */
+      font-size: 1rem;  
       margin: 10px 0;
     }
 
@@ -57,16 +57,16 @@
     }
   }
 
-  /* Плюсики и текст */
+  
   .banner__features {
     position: absolute;
     bottom: 20px;
-    left: 30px;  /* Сдвигаем плюсики влево */
+    left: 30px;  
     display: flex;
     gap: 30px;
     z-index: 1;
     flex-direction: row;
-    justify-content: flex-start;  /* Выравниваем плюсики влево */
+    justify-content: flex-start;  
     width: 100%;
 
     .feature {

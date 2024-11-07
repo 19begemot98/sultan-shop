@@ -13,7 +13,7 @@ const Banner = () => {
         <Button />
       </div>
 
-      {/* Плюсики на одной строке */}
+     
       <div className={styles.banner__features}>
         <div className={styles.feature}>
           <div className={styles.plusCircle}>+</div>
