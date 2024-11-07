@@ -1,70 +1,57 @@
-
 import React from 'react';
 import Link from 'next/link';
-import Button from "./button"
 import styles from "./header.module.scss";
+import Image from 'next/image';
+import iconLocate from '../image/location.png';
+import iconEmail from '../image/mail.png';
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.local}>
-      <img src="/location.png"  className = {styles.icon_loc}></img>
-      </div>
-      <div className={styles.contactInfo}>
-        <span>Адрес: г.Кокчетав, ул. Ж. Ташенова 129Б </span>
-        <span>(Рынок Восточный)</span>
-        <Link href="mailto:opt.sultan@mail.ru">opt.sultan@mail.ru</Link>
-        <span>На связи в любое время</span>
-      </div>
+      <div className={styles.header_1}>
+        <div className={styles.header_row}>
+          <div className={styles.header_left_part}>
+            <div className={styles.header_icon}>
+              <Image height={20} width={20} src={iconLocate} alt="location icon"/>
+            </div>
+            <div>
+              <div className={styles.header_text1}>
+                <span>Адрес: г.Кокчетав, ул. Ж. Ташенова 129Б</span>
+              </div>
+              <div className={styles.header_text2}>
+                <span>(Рынок Восточный)</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className={styles.header_vertical}></div>
 
-      <nav className={styles.nav}>
-        
-        <Link href="#"> 
-            О компании 
-        </Link>
-        <Link href="#">
-            Доставка
-        </Link>
-        <Link href="#">
-            Возврат
-        </Link>
-        <Link href="#">
-            Контакты
-        </Link>
-      </nav>
+          <div className={styles.header_left_part}>
+            <div className={styles.header_icon}>
+              <Image height={20} width={20} src={iconEmail} alt="email icon"/>
+            </div>
+            <div>
+              <div className={styles.header_text1}>
+                <Link href="mailto:opt.sultan@mail.ru">opt.sultan@mail.ru</Link>
+              </div>
+              <div className={styles.header_text2}>
+                <span>На связи в любое время</span>
+              </div>
+            </div>
+          </div>
 
-      <div className={styles.line}></div>
-
-      <div className={styles.part2}>
-        <div className = {styles.logo}>
-            <Link href={"/"}><img src={logo} alt = "logo" height={66}/></Link> 
+          <div className={styles.header_nav_container}>
+            <nav className={styles.header_nav}>
+              <Link href="#">О компании</Link>
+              <div className={styles.header_vertical}></div>
+              <Link href="#">Доставка</Link>
+              <div className={styles.header_vertical}></div>
+              <Link href="#">Возврат</Link>
+              <div className={styles.header_vertical}></div>
+              <Link href="#">Контакты</Link>
+            </nav>
+          </div>
         </div>
-
-        <div>
-          <Button href="/catalog">
-          <p>Каталог</p>
-          <img src = "/catalog.png" alt={"catalog log"}></img>
-          </Button>
-        </div>
-        
-        <div className={styles.search}>
-          <input type="text" placeholder="Поиск..." className={styles.searchInput} />
-        </div>
-
-
-        <div className={styles.callLink}>
-        <Link href="tel: +7(777)490-00-91">Заказать звонок</Link>
-        </div>
-
-        <Link href="/price-list.pdf" download>
-          <a className={`${styles.button} ${styles.priceListButton}`}>Прайс-лист</a>
-        </Link>
-
-        <Link href="/cart">
-          <a className={styles.cart}>
-            Корзина (0 товаров, 0 рублей)
-          </a>
-        </Link>
       </div>
     </header>
   );

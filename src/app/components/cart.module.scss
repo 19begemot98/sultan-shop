@@ -1,0 +1,25 @@
+.cart {
+    display: inline-flex;
+    align-items: center;
+    color: #3f4e65;
+    text-decoration: none;
+    font-size: 16px;
+  
+    .icon {
+      margin-right: 5px;
+      font-size: 20px;
+    }
+  
+    .itemCount {
+      background-color: #ffc107;
+      color: #ffffff;
+      border-radius: 50%;
+      padding: 5px;
+      margin-right: 10px;
+    }
+  
+    .totalAmount {
+      font-weight: 600;
+    }
+  }
+  

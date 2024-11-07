@@ -1,0 +1,26 @@
+.catalogButton {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #f0a500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #d48800;
+    }
+  }
+  .catalogButton a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    margin-left: 8px; 
+    display: flex;
+    align-items: center;
+  }
+  

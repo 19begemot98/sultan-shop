@@ -1,94 +1,74 @@
-// header.scss
 .header {
-  width: 80%;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
+  padding: 10px 0;
 }
-  
-    .contactInfo {
-      margin-left: 10px;
-      display: flex;
-  
-      flex-direction: column;
-      justify-content: center;
-      height: 34px;
-  }
-  
-  
-    .nav {
-      // Стили для навигации
-      display: flex;
-      a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 10px;
-        &:hover {
-          color: #007bff;
-        }
-      }
-  
-      .logo {
-        // Стили для логотипа
-        font-weight: bold;
-        font-size: 24px;
-      }
-    }
-  
-    .actions {
-      // Стили для действий (кнопки, поиск, корзина)
-      display: flex;
-      align-items: center;
-  
-      .button {
-        // Общие стили для кнопок
-        display: inline-block;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        margin-left: 10px;
-        border-radius: 4px;
-        font-weight: bold;
-  
-        &.catalogButton {
-          background-color: #007bff;
-          color: white;
-        }
-  
-        &.priceListButton {
-          background-color: #28a745;
-          color: white;
-        }
-      }
-  
-      .search {
-        // Стили для поиска
-        margin-right: 10px;
-  
-        .searchInput {
-          padding: 10px;
-          border: 1px solid #ddd;
-          border-radius: 4px;
-        }
-      }
-  
-      .callLink {
-        // Стили для ссылки "Заказать звонок"
-        color: #007bff;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-  
-      .cart {
-        // Стили для корзины
-        text-decoration: none;
-        color: #333;
-        &:hover {
-          color: #007bff;
-        }
-      }
-    }
-  
-  
+
+.header_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #3f4e65;
+  padding: 5px 5px;
+}
+
+.header_row {
+  display: flex;
+  align-items: center;
+  width: 100%; // 
+}
+
+.header_left_part {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.header_text1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.header_text2 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #3f4e65;
+}
+
+.header_vertical {
+  width: 0;
+  height: 39px;
+  border-left: 1px dotted #3f4e65;
+  margin: 2px;
+}
+
+.header_nav_container {
+  margin-left: auto; 
+}
+
+.header_nav {
+  align-items: center;
+  display: flex;
+  column-gap: 30px;
+}
+
+.header_nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3f4e65;
+  transition: color 0.3s;
+}
+
+.header_nav a:hover {
+  color: #000000;
+}

@@ -1,0 +1,21 @@
+.priceListButton {
+    background-color: #ffc107;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #ffb300;
+    }
+  
+    .icon {
+    margin-left: 8px; 
+    display: flex;
+    align-items: center;
+    }
+  }
+  
