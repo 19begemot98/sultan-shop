@@ -1,6 +1,11 @@
+//productcateg.jsx
 'use client';
 import React from 'react';
 import ProductList from './productlist';
+import aos from "../image/aos_crystal.png";
+import ariel from "../image/ariel_capsules.png";
+import bimax from "../image/bimax_power.png";
+import asort from "../image/sort_apelsin.png";
 
 
 const productCategories = [
@@ -9,7 +14,7 @@ const productCategories = [
     products: [
       {
         id: 1,
-        image: 'image/sort_apelsin.png',
+        image: aos,
         name: 'AOS Ср-во для мытья посуды Апельсин+мята',
         barcode: '4604040907548',
         manufacturer: 'Нэфис',
@@ -18,7 +23,7 @@ const productCategories = [
       },
       {
         id: 2,
-        image: 'image/aos_crystal.png',
+        image: asort,
         name: 'AOS средство для мытья посуды Crystal',
         barcode: '4604040907548',
         manufacturer: 'Нэфис',
@@ -27,7 +32,7 @@ const productCategories = [
       },
       {
         id: 3,
-        image: 'image/ariel_capsules.png',
+        image: ariel,
         name: 'ARIEL Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник',
         barcode: '4604040907548',
         manufacturer: 'Нэфис',
@@ -36,15 +41,13 @@ const productCategories = [
       },
       {
         id: 4,
-        image: 'image/bimax_powder.png',
+        image: bimax,
         name: 'BIMAX Порошок стиральный Автомат 100 пятен COMPACT',
         barcode: '4604040907548',
         manufacturer: 'Нэфис',
         brand: 'AOS',
         price: '48,76'
       },
-      // Repeat products for demo purposes as in the photo
-      { /* other repeated products */ }
     ]
   }
 ];
