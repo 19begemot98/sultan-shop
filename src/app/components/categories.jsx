@@ -31,8 +31,8 @@ const Categories = () => {
           <div
             key={category.id}
             className="category-item"
-            onClick={() => router.push('/catalog')}
-          >
+            onClick={() => router.push('/catalog')}>
+              
             <Image 
               src={category.image} 
               alt={category.title} 
