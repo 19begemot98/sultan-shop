@@ -7,10 +7,21 @@
     align-items: center;
     text-decoration: none;
     transition: background-color 0.3s;
+    width:200px;
+    height: 59px;
   
     &:hover {
       background-color: #ffb300;
     }
+
+    .priceListButton span { 
+      align-items: center;
+      width:150px;
+      height:17px;
+      size:14px;
+      
+    }
+  
   
     .icon {
     margin-left: 8px; 
@@ -18,4 +29,5 @@
     align-items: center;
     }
   }
+  
   

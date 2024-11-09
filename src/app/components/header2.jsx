@@ -16,12 +16,12 @@ export default function Header() {
       <CatalogButton />
       <SearchBar />
       <div className={styles.contactInfo}>
-        <span>+7 (777) 490-00-91</span>
-        <span>время работы: 9:00-20:00</span>
-        <CallButton />
-        <div>
-            <Image src={Woman} alt="contact woman" width={80} height={40} />
+        <div className={styles.text}>
+          <span>+7 (777) 490-00-91</span>
+          <p>время работы: 9:00-20:00</p>
+          <CallButton />
         </div>
+        <Image src={Woman} alt="contact woman" width={80} height={40} />
       </div>
       <div className={styles.vertical}></div>
       <PriceListButton />

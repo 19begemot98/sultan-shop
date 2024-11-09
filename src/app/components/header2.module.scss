@@ -5,14 +5,51 @@
     padding: 10px 20px;
     background-color: #ffffff;
     border-bottom: 1px solid #3f4e65;
+    gap: 30px;
+  }
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #3f4e65;
+  width: 236px;
+  }
+  
+  .contactInfo span {
+    font-weight: bold;
+    size: 14px;
+    height: 21px;
+    color: #111111;
+    width:136px;
+    height:21px;
+    size: 14px;
+  }
+  
+  .contactInfo p {
+    margin: 0;
+    size: 12px;
+    width:200px;
+    height: 18 px;
+    color: #3f4e65;
+    
+  }
+  
+  .contactInfo .text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    align-items: flex-end; 
+    text-align: right;
+ 
   }
   
   .contactInfo img{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 14px;
+
+    margin-left:10px;
     color: #3f4e65;
+    width: 70px;
+    height: 92px;
   }
 
 

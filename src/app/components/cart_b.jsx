@@ -9,12 +9,12 @@ export default function Cart({ itemCount = 0, totalAmount = 0 }) {
     <Link href="/cart" passHref>
       <div className={styles.cart}>
         <span className={styles.icon}>
-          <Image src={iconBasket} alt="basket Icon" width={20} height={20} />
+          <Image src={iconBasket} alt="basket Icon" width={40} height={40} />
+          <span className={styles.itemCount}>{itemCount}</span>
         </span>
-        <span className={styles.itemCount}>{itemCount}</span>
-        <span className={styles.totalAmount}>{totalAmount} ₸</span>
+        <span className={styles.label}>Корзина</span>
+        <span className={styles.totalAmount}>{totalAmount.toLocaleString()} ₸</span>
       </div>
     </Link>
   );
 }
-

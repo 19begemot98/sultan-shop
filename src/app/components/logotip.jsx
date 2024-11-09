@@ -8,7 +8,7 @@ export default function Logo() {
   return (
     <Link href="/">
       <div>
-        <Image src={logoIcon} alt="Logotip company" width={80} height={40} />
+        <Image src={logoIcon} alt="Logotip company" width={156} height={60} />
       </div>
     </Link>
   );

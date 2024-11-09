@@ -43,6 +43,7 @@
   font-size: 12px;
   font-weight: 300;
   color: #3f4e65;
+  text-decoration: none;
 }
 
 .header_vertical {
@@ -54,12 +55,14 @@
 
 .header_nav_container {
   margin-left: auto; 
+  text-decoration: none;
 }
 
 .header_nav {
   align-items: center;
   display: flex;
   column-gap: 30px;
+  text-decoration: none;
 }
 
 .header_nav a {
@@ -71,4 +74,6 @@
 
 .header_nav a:hover {
   color: #000000;
+  text-decoration: none;
 }
+
