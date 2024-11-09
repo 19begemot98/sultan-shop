@@ -1,15 +1,14 @@
-"use client"; // Mark the component as a Client Component
+'use client';
 
 import React from 'react';
-import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import './Categories.scss';
-
-import chemicals from "../image/chemicals.png";
+import Image from 'next/image';
 import cosmetics from "../image/cosmetics.png";
 import items from "../image/items.png";
 import kids from "../image/kids.png";
 import dishes from "../image/dishes.png";
+import chemicals from "../image/chemicals.png";
+import styles from './categories.module.scss';
 
 const Categories = () => {
   const router = useRouter();
@@ -23,24 +22,24 @@ const Categories = () => {
   ];
 
   return (
-    <section className="categories">
-      <h1 className="categories__title">КАТЕГОРИИ ТОВАРОВ</h1>
-      <p className="categories__subtitle">10 000+ ходовых позиций по специальным ценам</p>
-      <div className="categories__list">
+    <section className={styles.categories}>
+      <h1 className={styles.categories__title}><span>КАТЕГОРИИ</span> ТОВАРОВ</h1>
+      <p className={styles.categories__subtitle}>10 000+ ходовых позиций по специальным ценам</p>
+      <div className={styles.categories__list}>
         {categories.map((category) => (
           <div
             key={category.id}
-            className="category-item"
-            onClick={() => router.push('/catalog')}>
-              
+            className={styles.categoryItem}
+            onClick={() => router.push('/catalog')}
+          >
             <Image 
               src={category.image} 
               alt={category.title} 
-              width={60} 
-              height={60} 
-              className="category-item__image" 
+              width={250} 
+              height={250} 
+              className={styles.categoryImage}
             />
-            <h2 className="category-item__title">{category.title}</h2>
+            <h2 className={styles.categoryName}>{category.title}</h2>
           </div>
         ))}
       </div>
