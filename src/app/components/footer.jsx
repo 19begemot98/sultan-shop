@@ -1,12 +1,21 @@
 import React from 'react';
 import styles from './footer.module.scss';
+import logo from '../images/logo.png';
+import whatsappIcon from '../images/whatsapp-icon.png';
+import telegramIcon from '../images/telegram-icon.png';
+import visaIcon from '../images/visa-icon.png';
+import mastercardIcon from '../images/mastercard-icon.png';
+import downloadIcon from '../images/download-icon.png';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href="/">СУЛТАН</a>
+          <a href="/">
+            <img src={logo} alt="СУЛТАН" />
+            СУЛТАН
+          </a>
           <p>Компания «Султан» — снабжаем розничные магазины товарами "под ключ" в Кокчетаве и Акмолинской области</p>
           <form className={styles.subscribeForm}>
             <label>
@@ -37,11 +46,13 @@ const Footer = () => {
         </div>
         <div className={styles.download}>
           <h4>Скачать прайс-лист:</h4>
-          <a href="/path/to/price-list.pdf" download className={styles.downloadButton}>Прайс-лист <span>↓</span></a>
+          <a href="/path/to/price-list.pdf" download className={styles.downloadButton}>
+            Прайс-лист <span><img src={downloadIcon} alt="Download" /></span>
+          </a>
           <h4>Связь в мессенджерах:</h4>
           <div className={styles.messengers}>
-            <a href="#"><img src="/images/whatsapp-icon.png" alt="WhatsApp" /></a>
-            <a href="#"><img src="/images/telegram-icon.png" alt="Telegram" /></a>
+            <a href="#"><img src={whatsappIcon} alt="WhatsApp" /></a>
+            <a href="#"><img src={telegramIcon} alt="Telegram" /></a>
           </div>
         </div>
         <div className={styles.contacts}>
@@ -52,8 +63,8 @@ const Footer = () => {
           <a href="mailto:opt.sultan@mail.ru">opt.sultan@mail.ru</a>
           <p>На связи в любое время</p>
           <div className={styles.paymentMethods}>
-            <img src="/images/visa-icon.png" alt="Visa" />
-            <img src="/images/mastercard-icon.png" alt="MasterCard" />
+            <img src={visaIcon} alt="Visa" />
+            <img src={mastercardIcon} alt="MasterCard" />
           </div>
         </div>
       </div>
