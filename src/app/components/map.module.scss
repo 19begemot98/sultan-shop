@@ -1,0 +1,32 @@
+.contactContainer {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contactInfo {
+  margin-bottom: 20px;
+}
+
+.contactInfo h2 {
+  margin-bottom: 10px;
+}
+
+.contactDetails {
+  margin-bottom: 10px;
+}
+
+.contactAddress,
+.contactSales,
+.contactTax {
+  margin-bottom: 10px;
+}
+
+.contactMap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
