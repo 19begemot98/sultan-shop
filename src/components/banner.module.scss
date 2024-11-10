@@ -1,0 +1,145 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-left: 30px;  
+
+ 
+  .banner__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(-1); 
+    object-fit: cover;
+  }
+
+  /* Контент с текстом */
+  .banner__content {
+    z-index: 1;
+    color: #fff;
+    max-width: 50%;
+    text-align: left;  
+    padding: 20px;
+    
+    h1 {
+      font-size: 2.5rem;  
+      margin: 0;
+    }
+
+    p {
+      font-size: 1rem;  
+      margin: 10px 0;
+    }
+
+    .catalogButton {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: transparent;
+      color: #ffcc50;
+      border: 2px solid #ffcc50;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      margin-top: 20px;
+
+      &:hover {
+        background-color: #ffcc50;
+        color: #fff;
+      }
+    }
+  }
+
+  
+  .banner__features {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;  
+    display: flex;
+    gap: 30px;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: flex-start;  
+    width: 100%;
+
+    .feature {
+      display: flex;
+      align-items: center;
+      color: #fff;
+
+      .plusCircle {
+        width: 30px;
+        height: 30px;
+        background-color: #ffcc50;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.3rem;
+        margin-right: 10px;
+      }
+
+      .featureText {
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+        }
+
+        p:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  // Responsive styles
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .banner__content {
+      max-width: 100%;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    .banner__features {
+      gap: 15px;
+    }
+
+    .banner__image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .banner__content h1 {
+      font-size: 1.8rem;
+    }
+
+    .banner__content p {
+      font-size: 0.9rem;
+    }
+
+    .catalogButton {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .banner__features .feature p {
+      font-size: 0.8rem;
+    }
+
+    .featureText p {
+      font-size: 0.8rem;
+    }
+  }
+}
