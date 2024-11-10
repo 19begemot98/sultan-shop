@@ -8,6 +8,8 @@ import Banner from './components/banner';
 import Promotional from './components/productcard'
 import Categories from "./components/categories";
 
+import Slider from './components/slider';
+import SponsorSlider from './components/spslider';
 
 export default function Home() {
   return (
@@ -17,8 +19,12 @@ export default function Home() {
       <Banner />
       <Promotional />
       <Categories />
+      <Slider />
+      <SponsorSlider />
     </div>
   );
 }
 
+
+};
 
