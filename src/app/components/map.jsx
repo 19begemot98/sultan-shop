@@ -1,34 +1,33 @@
-'use client';
+"use client";
 
 import React from 'react';
 import styles from './map.module.scss';
-const Mape = dynamic(() => import('./components/map'), { ssr: false });
 
 const Map = () => {
   return (
-    <div className={styles['contact-container']}>
-      <div className={styles['contact-info']}>
+    <div className={styles.contactContainer}>
+      <div className={styles.contactInfo}>
         <h2>Контакты</h2>
         <p>Оптовый поставщик «Султан»</p>
-        <div className={styles['contact-details']}>
-          <div className={styles['contact-address']}>
+        <div className={styles.contactDetails}>
+          <div className={styles.contactAddress}>
             <strong>Адрес:</strong>
             <p>г. Кокчетав, ул. Ж. Ташенова 129Б (Рынок Восточный)</p>
           </div>
-          <div className={styles['contact-sales']}>
+          <div className={styles.contactSales}>
             <strong>Отдел продаж:</strong>
             <p>+7 (777) 490-00-91</p>
             <p>opt.sultan@mail.ru</p>
           </div>
         </div>
-        <div className={styles['contact-tax']}>
+        <div className={styles.contactTax}>
           <strong>Данные налогоплательщика:</strong>
           <p>ИП Катран Д.С.</p>
           <p>ИИН: 860113450858</p>
         </div>
       </div>
-      <div className={styles['contact-map']}>
-        <img src="/images/map-image.jpg" alt="Mape" />
+      <div className={styles.contactMap}>
+        <img src="/src/app/images/map.jpg" alt="Map" />
       </div>
     </div>
   );
