@@ -6,7 +6,7 @@ import iconDownload from '../image/download.png';
 export default function PriceListButton() {
   return (
     <div href="/path/to/price-list.pdf" download className={styles.priceListButton}>
-      Прайс-лист
+      <span>Прайс-лист</span>
       <span className={styles.icon}>
         <Image src={iconDownload} alt="Search Download" width={20} height={20} />
       </span> 

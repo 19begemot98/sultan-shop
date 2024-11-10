@@ -1,11 +1,12 @@
 import React from 'react';
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header1 from './components/header';
 import Header2 from './components/header2';
 import Banner from './components/banner';
 import Promotional from './components/productcard'
-
+import Categories from "./components/categories";
 
 
 export default function Home() {
@@ -15,7 +16,9 @@ export default function Home() {
       <Header2 />
       <Banner />
       <Promotional />
+      <Categories />
     </div>
   );
 }
+
 
