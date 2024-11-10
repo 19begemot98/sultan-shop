@@ -2,6 +2,8 @@
 
 import React from 'react';
 import styles from './map.module.scss';
+import Image from 'next/image';
+import Mappng from '../images/map.jpg';
 
 const Map = () => {
   return (
@@ -12,7 +14,8 @@ const Map = () => {
         <div className={styles.contactDetails}>
           <div className={styles.contactAddress}>
             <strong>Адрес:</strong>
-            <p>г. Кокчетав, ул. Ж. Ташенова 129Б (Рынок Восточный)</p>
+            <p>г. Кокчетав, ул. Ж. Ташенова 129Б</p>
+            <p>(Рынок Восточный)</p>
           </div>
           <div className={styles.contactSales}>
             <strong>Отдел продаж:</strong>
@@ -27,7 +30,7 @@ const Map = () => {
         </div>
       </div>
       <div className={styles.contactMap}>
-        <img src="/src/app/images/map.jpg" alt="Map" />
+        <Image src={Mappng} alt="Map" layout="fill" objectFit="cover" />
       </div>
     </div>
   );

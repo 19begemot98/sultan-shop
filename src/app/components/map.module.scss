@@ -1,21 +1,39 @@
 .contactContainer {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 600px;
+  position: relative;
+  max-width: 800px;
   margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .contactInfo {
-  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 450px; /* Уменьшение ширины для отступов */
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7); /* Более прозрачный фон */
+  z-index: 2;
+  border: 1px solid #ddd; /* Тонкая рамка */
+  border-radius: 5px;
+  color: #000; /* Черный цвет текста для лучшей видимости */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
 .contactInfo h2 {
   margin-bottom: 10px;
+  font-size: 20px; /* Размер заголовка */
+}
+
+.contactInfo p {
+  font-size: 14px; /* Размер текста */
 }
 
 .contactDetails {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contactAddress,
@@ -24,9 +42,17 @@
   margin-bottom: 10px;
 }
 
-.contactMap img {
-  max-width: 100%;
-  height: auto;
+.contactAddress strong,
+.contactSales strong,
+.contactTax strong {
   display: block;
-  margin: 0 auto;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactMap {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Высота карты */
+  z-index: 1;
 }
