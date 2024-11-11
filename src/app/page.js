@@ -10,6 +10,8 @@ import Categories from "./components/categories";
 import Slider from './components/slider';
 import SponsorSlider from './components/spslider';
 import Map from './components/map';
+import React from 'react';
+import Footer from './components/footer';
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <Slider />
       <SponsorSlider />
       <Map />
+      <Footer />
     </div>
   );
 }
