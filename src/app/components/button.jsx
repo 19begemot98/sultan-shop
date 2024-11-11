@@ -1,5 +1,6 @@
 // src/components/Button.jsx
 import React from 'react';
+import Link from 'next/link';
 import styles from './button.module.scss';
 
 const Button = ({ children, onClick }) => {
@@ -10,20 +11,15 @@ const Button = ({ children, onClick }) => {
   );
 };
 
-export default Button;
-
-
-import React from 'react';
-import Link from 'next/link';
-import styles from './button.module.scss';
-
-
-export default function CatalogButton() {
+const CatalogButton = () => {
   return (
-    <Link href="/catalog">
+    <Link href="/catalog"> 
       <div className={styles.catalogButton}>
         В каталог
       </div>
     </Link>
   );
-}
+};
+
+
+export { Button, CatalogButton };

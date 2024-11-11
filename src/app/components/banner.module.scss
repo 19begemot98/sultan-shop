@@ -1,14 +1,14 @@
 .banner {
   display: flex;
   align-items: center;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   position: relative;
-  height: 400px;
+  height: 796px;
+  width:1920px;
   overflow: hidden;
   flex-wrap: wrap;
-  padding-left: 30px;  
+  padding-left: 30px;
 
- 
   .banner__image {
     position: absolute;
     top: 0;
@@ -16,85 +16,88 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    transform: scaleX(-1); 
     object-fit: cover;
   }
 
-  /* Контент с текстом */
-  .banner__content {
-    z-index: 1;
-    color: #fff;
-    max-width: 50%;
-    text-align: left;  
+  .banner__overlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    
-    h1 {
-      font-size: 2.5rem;  
-      margin: 0;
-    }
+    border-radius: 8px;
+    width:921px;
+    height:796px;
 
-    p {
-      font-size: 1rem;  
-      margin: 10px 0;
-    }
+    .banner__content {
+      z-index: 1;
+      color: #fff;
+      max-width: 50%;
+      text-align: left;
+      padding: 20px;
 
-    .catalogButton {
-      display: inline-block;
-      padding: 8px 16px;
-      background-color: transparent;
-      color: #ffcc50;
-      border: 2px solid #ffcc50;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      margin-top: 20px;
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
 
-      &:hover {
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+
+      .catalogButton {
+        display: inline-block;
+        padding: 12px 24px;
         background-color: #ffcc50;
         color: #fff;
+        border: none;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+        margin-top: 20px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #e6b84f;
+        }
       }
     }
-  }
 
-  
-  .banner__features {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;  
-    display: flex;
-    gap: 30px;
-    z-index: 1;
-    flex-direction: row;
-    justify-content: flex-start;  
-    width: 100%;
-
-    .feature {
+    .banner__features {
       display: flex;
-      align-items: center;
-      color: #fff;
+      gap: 30px;
+      z-index: 1;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
 
-      .plusCircle {
-        width: 30px;
-        height: 30px;
-        background-color: #ffcc50;
-        border-radius: 50%;
+      .feature {
         display: flex;
         align-items: center;
-        justify-content: center;
         color: #fff;
-        font-size: 1.3rem;
-        margin-right: 10px;
-      }
 
-      .featureText {
-        p {
-          margin: 0;
-          font-size: 0.9rem;
+        .plusCircle {
+          width: 30px;
+          height: 30px;
+          background-color: #ffcc50;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 1.3rem;
+          margin-right: 10px;
         }
 
-        p:first-child {
-          font-weight: bold;
+        .featureText {
+          p {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+
+          p:first-child {
+            font-weight: bold;
+          }
         }
       }
     }

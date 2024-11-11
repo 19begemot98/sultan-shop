@@ -1,66 +1,114 @@
-// src/components/Slider.module.scss
-.slider-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slider {
+.sliderContainer {
   position: relative;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
   overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 
-.slider-button {
+.sliderButton {
   background: none;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   z-index: 1;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:first-of-type {
+    left: 10px;
+  }
+  &:last-of-type {
+    right: 10px;
+  }
 }
 
 .slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: flex-start;
-  background-color: #f0f0f0;
-  width: 100%;
-  transition: transform 0.5s ease;
-}
+  align-items: flex-start; 
+  text-align: left; 
+  justify-content: flex-start; 
+  width: 1366px;
+  height:500px;
+  position: relative;
 
-.slide-image {
-  width: 100%;
-  height: auto;
-}
-
-.slide-content {
-  padding: 20px;
-
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  .slideImage {
+    width: 100%;
+    height: 100%;
   }
 
-  p {
-    font-size: 16px;
-    margin-bottom: 20px;
+  .slideContent {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    padding: 20px;
+    text-align: left; 
+
+    .promoDate {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #fff; 
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #fff; 
+    }
+
+    button {
+      background-color: #ffcc50;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e6b84f;
+      }
+    }
   }
 }
 
 @media (max-width: 768px) {
-  .slide-content {
-    h2 {
-      font-size: 20px;
+  .slide {
+    flex-direction: column;
+
+    .slideImage {
+      width: 100%;
+      height: auto;
     }
 
-    p {
-      font-size: 14px;
+    .slideContent {
+      width: 100%;
+      padding: 20px;
+      text-align: left; 
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
     }
   }
 }

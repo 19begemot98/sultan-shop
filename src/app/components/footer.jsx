@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './footer.module.scss';
 import logo from '../images/logo.png';
 import whatsappIcon from '../images/whatsapp-icon.png';
@@ -13,7 +14,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="/">
-            <img src={logo} alt="СУЛТАН" />
+            <Image src={logo} alt="СУЛТАН" />
             СУЛТАН
           </a>
           <p>Компания «Султан» — снабжаем розничные магазины товарами "под ключ" в Кокчетаве и Акмолинской области</p>
@@ -63,8 +64,8 @@ const Footer = () => {
           <a href="mailto:opt.sultan@mail.ru">opt.sultan@mail.ru</a>
           <p>На связи в любое время</p>
           <div className={styles.paymentMethods}>
-            <img src={visaIcon} alt="Visa" />
-            <img src={mastercardIcon} alt="MasterCard" />
+            <Image src={visaIcon} alt="Visa" />
+            <Image src={mastercardIcon} alt="MasterCard" />
           </div>
         </div>
       </div>

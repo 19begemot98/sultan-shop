@@ -1,7 +1,8 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
+import Image from 'next/image';
 import styles from './Slider.module.scss';
-import Button from './Button';
+import { Button } from './button'; 
 import promotion from '../images/promotion.png';
 
 const sliderData = [
@@ -31,19 +32,18 @@ const Slider = () => {
   };
 
   return (
-    <div className={styles['slider-container']}>
-      <div className={styles['slider']}>
-        <button className={styles['slider-button']} onClick={handlePrev}>&lt;</button>
-        <div className={styles['slide']}>
-          <img src={sliderData[currentIndex].image} alt={sliderData[currentIndex].title} />
-          <div className={styles['slide-content']}>
-            <h2>{sliderData[currentIndex].title}</h2>
-            <p>{sliderData[currentIndex].description}</p>
-            <Button>{sliderData[currentIndex].buttonText}</Button>
-          </div>
+    <div className={styles.sliderContainer}>
+      <button className={styles.sliderButton} onClick={handlePrev}>&lt;</button>
+      <div className={styles.slide}>
+        <Image src={sliderData[currentIndex].image} alt={sliderData[currentIndex].title} className={styles.slideImage} />
+        <div className={styles.slideContent}>
+          <p className={styles.promoDate}>*АКЦИЯ ДЕЙСТВУЕТ ДО 04/09/22</p>
+          <h2>{sliderData[currentIndex].title}</h2>
+          <p>{sliderData[currentIndex].description}</p>
+          <Button>{sliderData[currentIndex].buttonText}</Button>
         </div>
-        <button className={styles['slider-button']} onClick={handleNext}>&gt;</button>
       </div>
+      <button className={styles.sliderButton} onClick={handleNext}>&gt;</button>
     </div>
   );
 };
