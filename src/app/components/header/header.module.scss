@@ -1,0 +1,146 @@
+.header {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  @media (max-width: 1200px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 992px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 576px;
+  }
+}
+
+.header_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #3f4e65;
+  padding: 5px 5px;
+
+  @media (max-width: 1200px) {
+    padding: 5px 10px;
+  }
+
+  @media (max-width: 992px) {
+    padding: 5px 15px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 5px 20px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 5px 25px;
+  }
+}
+
+.header_row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.header_left_part {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+
+  @media (max-width: 576px) {
+    margin-right: 10px;
+  }
+}
+
+.header_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  @media (max-width: 576px) {
+    margin-right: 4px;
+  }
+}
+
+.header_text1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 2px;
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.header_text2 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #3f4e65;
+  text-decoration: none;
+
+  @media (max-width: 576px) {
+    font-size: 10px;
+  }
+}
+
+.header_vertical {
+  width: 0;
+  height: 39px;
+  border-left: 1px dotted #3f4e65;
+  margin: 2px;
+
+  @media (max-width: 576px) {
+    height: 30px;
+  }
+}
+
+.header_nav_container {
+  margin-left: auto;
+  text-decoration: none;
+
+  @media (max-width: 576px) {
+    margin-left: 0;
+  }
+}
+
+.header_nav {
+  align-items: center;
+  display: flex;
+  column-gap: 30px;
+  text-decoration: none;
+
+  @media (max-width: 576px) {
+    column-gap: 15px;
+  }
+}
+
+.header_nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #3f4e65;
+  transition: color 0.3s;
+
+  @media (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.header_nav a:hover {
+  color: #000000;
+  text-decoration: none;
+}

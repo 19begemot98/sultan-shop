@@ -1,6 +1,6 @@
-// src/components/Button.jsx
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import styles from './button.module.scss';
 
 const Button = ({ children, onClick }) => {
@@ -12,14 +12,15 @@ const Button = ({ children, onClick }) => {
 };
 
 const CatalogButton = () => {
+  const { t } = useTranslation('common');
+
   return (
-    <Link href="/catalog"> 
+    <Link href="/catalog">
       <div className={styles.catalogButton}>
-        В каталог
+        {t('catalog_button')}
       </div>
     </Link>
   );
 };
-
 
 export { Button, CatalogButton };

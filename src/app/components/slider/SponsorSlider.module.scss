@@ -1,0 +1,77 @@
+.sponsorSlider {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+
+  .title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f5a623;
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .subtitle {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #888;
+
+    @media (max-width: 1200px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .prev, .next {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .sponsorContainer {
+    width: 100px;
+    height: 50px;
+
+    @media (max-width: 1200px) {
+      width: 90px;
+      height: 45px;
+    }
+
+    @media (max-width: 992px) {
+      width: 80px;
+      height: 40px;
+    }
+  }
+}

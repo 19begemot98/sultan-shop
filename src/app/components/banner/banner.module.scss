@@ -1,0 +1,191 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 1920px;
+  height: 796px;
+  padding-left: 30px;
+
+  .banner__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .banner__overlay {
+    position: relative;
+    width: 921px;
+    height: 796px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+
+    .banner__content {
+      z-index: 1;
+      max-width: 50%;
+      padding: 20px;
+      text-align: left;
+      color: #fff;
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+
+      .catalogButton {
+        display: inline-block;
+        padding: 12px 24px;
+        margin-top: 20px;
+        background-color: #ffcc50;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: #e6b84f;
+        }
+      }
+    }
+
+    .banner__features {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 30px;
+      z-index: 1;
+      width: 100%;
+
+      .feature {
+        display: flex;
+        align-items: center;
+        color: #fff;
+
+        .plusCircle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          background-color: #ffcc50;
+          color: #fff;
+          font-size: 1.3rem;
+          border-radius: 50%;
+        }
+
+        .featureText {
+          p {
+            margin: 0;
+            font-size: 0.9rem;
+          }
+
+          p:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .banner__overlay {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+
+    .banner__content {
+      max-width: 100%;
+      padding: 15px;
+    }
+
+    .catalogButton {
+      padding: 10px 20px;
+    }
+
+    .banner__features {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .banner__overlay {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+
+    .banner__content {
+      max-width: 100%;
+      padding-left: 30px;
+    }
+
+    .banner__features {
+      gap: 15px;
+    }
+
+    .banner__image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .banner__overlay {
+      padding: 10px;
+    }
+
+    .banner__content {
+      padding: 10px;
+    }
+
+    .catalogButton {
+      padding: 8px 16px;
+    }
+
+    .banner__features {
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .banner__content h1 {
+      font-size: 1.8rem;
+    }
+
+    .banner__content p {
+      font-size: 0.9rem;
+    }
+
+    .catalogButton {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+
+    .banner__features .feature p {
+      font-size: 0.8rem;
+    }
+
+    .featureText p {
+      font-size: 0.8rem;
+    }
+  }
+}

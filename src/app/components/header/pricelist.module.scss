@@ -1,0 +1,77 @@
+.priceListButton {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 59px;
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ffb300;
+  }
+
+  .priceListButton span {
+    align-items: center;
+    width: 150px;
+    height: 17px;
+    font-size: 14px;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+
+  @media (max-width: 1200px) {
+    width: 180px;
+    height: 55px;
+    padding: 8px 18px;
+
+    .priceListButton span {
+      width: 140px;
+      height: 15px;
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 160px;
+    height: 50px;
+    padding: 6px 16px;
+
+    .priceListButton span {
+      width: 130px;
+      height: 13px;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 45px;
+    padding: 4px 14px;
+
+    .priceListButton span {
+      width: 120px;
+      height: 11px;
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    width: 120px;
+    height: 40px;
+    padding: 2px 12px;
+
+    .priceListButton span {
+      width: 100px;
+      height: 9px;
+      font-size: 10px;
+    }
+  }
+}

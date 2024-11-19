@@ -1,0 +1,134 @@
+.categories {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #3f4e65;
+
+    span {
+      color: #fdbd2d;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 300;
+    color: rgb(63, 78, 101);
+
+    @media (max-width: 1200px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
+    }
+  }
+
+  .categoryItem {
+    text-align: center;
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f9f6f2;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      width: 140px;
+      height: 184px;
+      margin: 10px;
+    }
+
+    @media (max-width: 576px) {
+      width: 120px;
+      height: 160px;
+    }
+  }
+
+  .categoryImage {
+    border-radius: 20px;
+
+    @media (max-width: 768px) {
+      height: 140px;
+      width: 140px;
+    }
+
+    @media (max-width: 576px) {
+      height: 120px;
+      width: 120px;
+    }
+  }
+
+  .categoryName {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+}
