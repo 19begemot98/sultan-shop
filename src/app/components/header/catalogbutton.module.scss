@@ -1,6 +1,7 @@
 .catalogButton {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 192px;
   height: 59px;
   padding: 10px 20px;
@@ -8,23 +9,20 @@
   font-weight: 600;
   color: #ffffff;
   background-color: #f0a500;
-  border-radius: 8px;
-  text-decoration: none;
+  border-radius: 40px;
+  text-decoration-color: #d48800;
+  align-items: center;
   transition: background-color 0.3s;
 
   &:hover {
     background-color: #d48800;
   }
 
-  a {
-    text-decoration: none;
-  }
-
   @media (max-width: 1200px) {
     width: 180px;
     height: 55px;
     padding: 8px 18px;
-    font-size: 15px;
+    font-size: 8px;
   }
 
   @media (max-width: 992px) {
@@ -52,7 +50,7 @@
 .icon {
   display: flex;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 16px;
 
   @media (max-width: 1200px) {
     margin-left: 7px;

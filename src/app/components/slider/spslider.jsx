@@ -1,46 +1,38 @@
 'use client';
-
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect } from 'react';
 import styles from './SponsorSlider.module.scss';
-import Sponsor from './sponsor';
-
-const sponsors = [
-  { image: '/image/Airwick.png', nameKey: 'AirWick' },
-  { image: '/image/masterfresh.png', nameKey: 'MasterFresh' },
-  { image: '/image/sbiar.png', nameKey: 'Sbiar' },
-  { image: '/image/cottonclub.png', nameKey: 'CottonClub' },
-  { image: '/image/camay.png', nameKey: 'Camay' },
-  { image: '/image/johnson.png', nameKey: 'Johnsons' },
-  { image: '/image/colgate.png', nameKey: 'Colgate' },
-  { image: '/image/Nivea.png', nameKey: 'Nivea' },
-  { image: '/image/ac.png', nameKey: 'AC' },
-  { image: '/image/Nefis.png', nameKey: 'Nefis' }
-];
+import Sponsor from './sponsor'; 
+import sponsorData from '../../../../public/products.json';  
 
 const SponsorSlider = () => {
-  const { t } = useTranslation('common');
+  const [sponsors, setSponsors] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const sponsorsPerSlide = 10; 
+
+  useEffect(() => {
+    setSponsors(sponsorData.sponsors);  
+  }, []);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? sponsors.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? Math.max(sponsors.length - sponsorsPerSlide, 0) : prevIndex - sponsorsPerSlide));
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === sponsors.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex + sponsorsPerSlide >= sponsors.length ? 0 : prevIndex + sponsorsPerSlide));
   };
 
   return (
     <div className={styles.sponsorSlider}>
-      <h2 className={styles.title}>{t('bestProducts')}</h2>
-      <p className={styles.subtitle}>{t('leadingBrands')}</p>
+      <h2 className={styles.title}>Лучшие товары</h2>
+      <p className={styles.subtitle}>От ведущих мировых брендов</p>
       <div className={styles.slider}>
         <button className={styles.prev} onClick={handlePrev}>&lt;</button>
-        <div className={styles.sponsorContainer}>
-          <Sponsor 
-            image={sponsors[currentIndex].image} 
-            nameKey={sponsors[currentIndex].nameKey} 
-          />
+        <div className={styles.sponsorContainer} style={{ transform: `translateX(-${currentIndex * (100 / sponsorsPerSlide)}%)` }}>
+          {sponsors.slice(currentIndex, currentIndex + sponsorsPerSlide).map((sponsor, index) => (
+            <div key={index} className={styles.sponsor}>
+              <img src={sponsor.image} alt={`Sponsor ${index}`} style={{ width: '100%', height: '100%' }} />
+            </div>
+          ))}
         </div>
         <button className={styles.next} onClick={handleNext}>&gt;</button>
       </div>

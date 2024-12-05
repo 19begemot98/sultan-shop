@@ -1,0 +1,105 @@
+{
+    "productCategories": [
+      {
+        "title": "Акционные товары",
+        "products": [
+          {
+            "id": 1,
+            "image": "/image/aos-crystal.png",
+            "name": "AOS Ср-во для мытья посуды Апельсин+мята",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": 2,
+            "image": "/image/sort-apelsin.png",
+            "name": "AOS средство для мытья посуды Crystal",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": 3,
+            "image": "/image/ariel-capsules.png",
+            "name": "ARIEL Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": 4,
+            "image": "/image/bimax-power.png",
+            "name": "BIMAX Порошок стиральный Автомат 100 пятен COMPACT",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          }
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "title": "Бытовая химия",
+        "image": "/image/chemicals.png"
+      },
+      {
+        "id": 2,
+        "title": "Косметика и гигиена",
+        "image": "/image/cosmetics.png"
+      },
+      {
+        "id": 3,
+        "title": "Хозяйственные товары",
+        "image": "/image/items.png"
+      },
+      {
+        "id": 4,
+        "title": "Товары для детей и мам",
+        "image": "/image/kids.png"
+      },
+      {
+        "id": 5,
+        "title": "Посуда",
+        "image": "/image/dishes.png"
+      }
+    ],
+
+    "sliderData": [
+      {
+        "image": "/image/promotion.png",
+        "title": "Название Акции 1",
+        "description": "Условия акции в пару строк. Условия акции в пару строк.",
+        "buttonText": "ПРИНЯТЬ УЧАСТИЕ"
+      },
+      {
+        "image": "/image/promotion.png",
+        "title": "Название Акции 2",
+        "description": "Описание каталога в пару строк. Описание каталога в пару строк.",
+        "buttonText": "ПОСМОТРЕТЬ КАТАЛОГ"
+      }
+    ],
+
+    "sponsors": [
+    { "image": "/image/Airwick.png", "name": "Air Wick" },
+    { "image": "/image/masterfresh.png", "name": "Master Fresh" },
+    { "image": "/image/sbiar.png", "name": "Sbiar" },
+    { "image": "/image/cottonclub.png", "name": "Cotton Club" },
+    { "image": "/image/camay.png", "name": "Camay" },
+    { "image": "/image/johnson.png", "name": "Johnson's" },
+    { "image": "/image/colgate.png", "name": "Colgate" },
+    { "image": "/image/Nivea.png", "name": "Nivea" },
+    { "image": "/image/ac.png", "name": "AC" },
+    { "image": "/image/Nefis.png", "name": "Nefis" }
+  ]
+}
+  

@@ -59,16 +59,31 @@
         flex-direction: column;
         font-size: 14px;
         margin-bottom: 10px;
+        color: #ecf0f1;
       }
 
-      input {
-        padding: 10px;
+      .inputContainer {
+        position: relative;
+        width: 282px;
+        height: 59px;
+      }
+
+      .emailInput {
+        padding: 15px;
         border: none;
-        border-radius: 20px;
+        border-radius: 40px;
         margin-top: 5px;
         width: 100%;
-        max-width: 300px;
         transition: all 0.3s ease;
+        background-color: #ecf0f1;
+        color: #34495e;
+        font-size: 18px;
+        box-sizing: border-box;
+
+        &::placeholder {
+          color: #34495e;
+          font-style: italic;
+        }
 
         &:focus {
           outline: none;
@@ -76,18 +91,32 @@
         }
       }
 
-      button {
-        padding: 10px 20px;
-        background-color: #f39c12;
+      .submitButton {
+        position: absolute;
+        top: 50%;
+        left: 112px;
+        transform: translateY(-50%);
+        background: none;
         border: none;
-        border-radius: 20px;
-        color: #ecf0f1;
+        color: #f39c12;
+        font-size: 14px;
         cursor: pointer;
         transition: all 0.3s ease;
-        margin-top: 10px;
+        width: 100%;
+
+        span {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f39c12;
+          border-radius: 50%;
+          width: 39px;
+          height: 39px;
+          padding: 4px;
+        }
 
         &:hover {
-          background-color: #e67e22;
+          color: #e67e22;
         }
       }
     }
@@ -118,23 +147,29 @@
   }
 
   .downloadButton {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #f39c12;
     border: none;
-    border-radius: 20px;
+    border-radius: 40px;
+    width: 214px;
+    height: 59px;
     color: #ecf0f1;
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 14px;
+    font-size: 20px;
+    text-align: center;
+    
 
     span {
       margin-left: 5px;
 
       img {
-        width: 17px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
       }
     }
 
@@ -143,23 +178,10 @@
     }
   }
 
-  .messengers {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-
-    a {
-      display: inline-block;
-
-      img {
-        width: 40px;
-        height: 40px;
-      }
-    }
-  }
-
   .contacts {
-    p, a {
+    text-align: right;
+    p,
+    a {
       margin-bottom: 5px;
       color: #ecf0f1;
       text-decoration: none;
@@ -177,10 +199,27 @@
       display: flex;
       gap: 10px;
       margin-top: 10px;
+      justify-content: flex-end;
 
       img {
         width: 50px;
         height: 30px;
+      }
+    }
+
+    .messengers {
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      justify-content: center;
+
+      a {
+        display: inline-block;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
       }
     }
   }

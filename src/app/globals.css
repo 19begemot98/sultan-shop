@@ -23,3 +23,15 @@ body {
     padding: 0 30 px;
   }
 }
+
+body {
+  direction: ltr;
+}
+
+body[lang="en"] {
+  direction: ltr;
+}
+
+body[lang="ru"] {
+  direction: ltr;
+}

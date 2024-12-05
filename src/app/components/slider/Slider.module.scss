@@ -1,170 +1,99 @@
-.searchBar {
-  .sliderContainer {
-    position: relative;
-    width: 100%;
-    max-width: 1366px;
-    margin: 0 auto;
-    overflow: hidden;
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  max-height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
 
-    .sliderButton {
-      position: absolute;
-      top: 50%;
-      z-index: 1;
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: #000;
-      cursor: pointer;
-      transform: translateY(-50%);
+  .sliderButton {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
 
-      &:first-of-type {
-        left: 10px;
-      }
-
-      &:last-of-type {
-        right: 10px;
-      }
-
-      @media (max-width: 576px) {
-        font-size: 1.5rem;
-      }
+    &:hover {
+      background: #f0f0f0;
     }
 
-    .slide {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      width: 1366px;
-      height: 500px;
+    &:first-of-type {
+      left: 10px;
+    }
+
+    &:last-of-type {
+      right: 10px;
+    }
+  }
+
+  .slide {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+    .slideImage {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slideContent {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      color: #fff;
       text-align: left;
+      max-width: 50%;
 
-      @media (max-width: 1200px) {
-        width: 100%;
-        height: 450px;
+      .promoDate {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        color: #ddd;
       }
 
-      @media (max-width: 992px) {
-        width: 100%;
-        height: 400px;
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: #fff;
       }
 
-      @media (max-width: 768px) {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #eee;
       }
 
-      .slideImage {
-        width: 100%;
-        height: 100%;
+      .slideButton {
+        background-color: #ffcc50;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        width: 343px;
+        height: 90px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: background-color 0.3s;
 
-        @media (max-width: 768px) {
-          width: 100%;
-          height: auto;
+        &:hover {
+          background-color: #e6b84f;
         }
       }
 
-      .slideContent {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 100%;
-        padding: 20px;
-        text-align: left;
-
-        @media (max-width: 768px) {
-          padding: 20px;
-        }
-
-        .promoDate {
-          font-size: 1rem;
-          margin-bottom: 10px;
-          color: #fff;
-        }
-
-        h2 {
-          font-size: 2.5rem;
-          margin-bottom: 20px;
-          font-weight: bold;
-          color: #fff;
-
-          @media (max-width: 1200px) {
-            font-size: 2.2rem;
-          }
-
-          @media (max-width: 992px) {
-            font-size: 2rem;
-          }
-
-          @media (max-width: 768px) {
-            font-size: 1.8rem;
-          }
-
-          @media (max-width: 576px) {
-            font-size: 1.5rem;
-          }
-        }
-
-        p {
-          font-size: 1.2rem;
-          margin-bottom: 30px;
-          color: #fff;
-
-          @media (max-width: 1200px) {
-            font-size: 1.1rem;
-          }
-
-          @media (max-width: 992px) {
-            font-size: 1rem;
-          }
-
-          @media (max-width: 768px) {
-            font-size: 0.9rem;
-          }
-
-          @media (max-width: 576px) {
-            font-size: 0.8rem;
-          }
-        }
-
-        button {
-          background-color: #ffcc50;
-          color: #fff;
-          border: none;
-          padding: 15px 30px;
-          font-size: 1.2rem;
-          font-weight: bold;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-
-          &:hover {
-            background-color: #e6b84f;
-          }
-
-          @media (max-width: 1200px) {
-            font-size: 1.1rem;
-            padding: 12px 25px;
-          }
-
-          @media (max-width: 992px) {
-            font-size: 1rem;
-            padding: 10px 20px;
-          }
-
-          @media (max-width: 768px) {
-            font-size: 0.9rem;
-            padding: 8px 16px;
-          }
-
-          @media (max-width: 576px) {
-            font-size: 0.8rem;
-            padding: 6px 12px;
-          }
-        }
-      }
     }
   }
 }
