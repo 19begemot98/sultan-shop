@@ -1,0 +1,226 @@
+.footer {
+  background-color: #34495e;
+  color: #ecf0f1;
+  padding: 40px 20px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .logo, .menu, .categories, .download, .contacts {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+
+    @media (max-width: 768px) {
+      min-width: 100%;
+    }
+  }
+
+  .logo {
+    a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ecf0f1;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    .subscribeForm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #ecf0f1;
+      }
+
+      .inputContainer {
+        position: relative;
+        width: 282px;
+        height: 59px;
+      }
+
+      .emailInput {
+        padding: 15px;
+        border: none;
+        border-radius: 40px;
+        margin-top: 5px;
+        width: 100%;
+        transition: all 0.3s ease;
+        background-color: #ecf0f1;
+        color: #34495e;
+        font-size: 18px;
+        box-sizing: border-box;
+
+        &::placeholder {
+          color: #34495e;
+          font-style: italic;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      .submitButton {
+        position: absolute;
+        top: 50%;
+        left: 112px;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        color: #f39c12;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 100%;
+
+        span {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f39c12;
+          border-radius: 50%;
+          width: 39px;
+          height: 39px;
+          padding: 4px;
+        }
+
+        &:hover {
+          color: #e67e22;
+        }
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 5px;
+
+      a {
+        color: #ecf0f1;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+
+  .downloadButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 40px;
+    width: 214px;
+    height: 59px;
+    color: #ecf0f1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    text-align: center;
+    
+
+    span {
+      margin-left: 5px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &:hover {
+      background-color: #e67e22;
+    }
+  }
+
+  .contacts {
+    text-align: right;
+    p,
+    a {
+      margin-bottom: 5px;
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    a {
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f39c12;
+      }
+    }
+
+    .paymentMethods {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      justify-content: flex-end;
+
+      img {
+        width: 50px;
+        height: 30px;
+      }
+    }
+
+    .messengers {
+      display: flex;
+      gap: 30px;
+      margin-top: 10px;
+      justify-content: center;
+
+      a {
+        display: inline-block;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

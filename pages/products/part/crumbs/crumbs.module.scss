@@ -1,0 +1,53 @@
+.BreadCrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #3f4e65;
+    margin-bottom: 20px;
+    padding: 0 40px; 
+    flex-wrap: wrap;
+  
+    > a {
+      color: #3f4e65;
+      text-decoration: none;
+    }
+  
+    .BreadcrumbItem {
+      display: flex;
+      align-items: center;
+  
+      .Separator {
+        margin: 0 10px;
+        border-left: 1px dotted #3f4e65;
+        height: 0.8em; 
+      }
+  
+      a {
+        color: #3f4e65;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin-bottom: 15px;
+  
+      .BreadcrumbItem .Separator {
+        margin: 0 5px;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 10px;
+      margin-bottom: 10px;
+  
+      .BreadcrumbItem .Separator {
+        margin: 0 3px;
+      }
+    }
+  }
+  
