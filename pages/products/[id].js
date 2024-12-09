@@ -1,10 +1,10 @@
 import React from 'react';
-import ProductCard from '../../src/app/components/productdescription/description';
+import ProductCard from './part/productdescription/description';
 import Header from '../../src/app/components/header/header';
 import Footer from '../../src/app/components/footer/footer';
 import productData from '../../public/products.json';
-import Crumbs from '../../src/app/components/crumbs/crumbs';
-import ProductSlider from '../../src/app/components/productslider/productslider';
+import Crumbs from './part/crumbs/crumbs';
+import ProductSlider from './part/productslider/productslider';
 
 const ProductPage = ({ product, productCategories }) => {
   return (
