@@ -3,8 +3,13 @@
   align-items: center;
   flex-direction: row; 
   color: #000000;
-  text-decoration: none; 
+  text-decoration: none; /* Убираем подчеркивание */
   font-size: 16px;
+  cursor: pointer; /* Добавляем указатель курсора */
+
+  &:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+  }
 
   .icon {
     position: relative;

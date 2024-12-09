@@ -42,8 +42,12 @@ const Banner = () => {
       </div>
 
       <div className={styles.banner__image}>
-        {/* <Image src={Photo_banner} alt={t('banner.alt')} layout="fill" objectFit="cover" /> */}
-        <Image src={Photo_banner} alt="Чистящие средства" layout="fill" objectFit="cover" />
+        <Image 
+          src={Photo_banner} 
+          alt="Чистящие средства" 
+          layout="fill" 
+          objectFit="cover" 
+        />
       </div>
     </div>
   );

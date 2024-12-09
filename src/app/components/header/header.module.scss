@@ -1,28 +1,31 @@
 .header {
-  width: 100%;
+  width: calc(100% - 80px);
   max-width: 1920px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 20px 40px; 
   display: flex;
   flex-direction: column;
 
   @media (max-width: 1200px) {
-    max-width: 1200px;
+    max-width: 1120px; 
+    padding: 20px 20px; 
   }
 
   @media (max-width: 992px) {
-    max-width: 992px;
+    max-width: 912px; 
+    padding: 20px 20px; 
   }
 
   @media (max-width: 768px) {
-    max-width: 768px;
+    max-width: 688px; 
+    padding: 20px 20px; 
   }
 
   @media (max-width: 576px) {
-    max-width: 576px;
+    max-width: 496px; 
+    padding: 20px 20px; 
   }
 }
-
 
 .headerTop {
   display: flex;
@@ -49,7 +52,6 @@
   }
 }
 
-
 .header_row {
   display: flex;
   align-items: center;
@@ -59,7 +61,6 @@
     flex-direction: column;
   }
 }
-
 
 .header_left_part {
   display: flex;
@@ -71,7 +72,6 @@
   }
 }
 
-
 .header_icon {
   width: 20px;
   height: 20px;
@@ -81,7 +81,6 @@
     margin-right: 4px;
   }
 }
-
 
 .header_text {
   font-size: 14px;
@@ -104,7 +103,6 @@
     font-size: 10px;
   }
 }
-
 
 .header_nav_container {
   margin-left: auto;
@@ -141,14 +139,12 @@
   color: #000000;
 }
 
-
 .divider {
   width: 100%;
   border: 0;
   border-top: 1px solid #3f4e65;
   margin: 0;
 }
-
 
 .headerBottom {
   display: flex;
@@ -180,7 +176,6 @@
   }
 }
 
-
 .contactInfo {
   display: flex;
   align-items: center;
@@ -202,7 +197,7 @@
   align-items: flex-end;
   text-align: right;
   margin-right: 16px;
-  margin-left:-16px;
+  margin-left: -16px;
 
   @media (max-width: 576px) {
     margin-right: 2px;
@@ -227,7 +222,7 @@
   align-items: flex-end;
   text-align: right;
   margin-right: 16px;
-  margin-left:-16px;
+  margin-left: -16px;
 
   @media (max-width: 576px) {
     margin-right: 2px;
@@ -247,18 +242,17 @@
   }
 }
 
-
 .vertical {
   width: 0;
   height: 39px;
   border-left: 1px dotted #3f4e65;
   margin: 2px;
-  margin-left: 10px;  
-  margin-right: 10px; 
+  margin-left: 10px;
+  margin-right: 10px;
 
   @media (max-width: 576px) {
     height: 20px;
-    margin-left: 5px;  
-    margin-right: 5px; 
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }

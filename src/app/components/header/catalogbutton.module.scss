@@ -10,9 +10,9 @@
   color: #ffffff;
   background-color: #f0a500;
   border-radius: 40px;
-  text-decoration-color: #d48800;
-  align-items: center;
+  text-decoration: none; /* Убираем подчеркивание */
   transition: background-color 0.3s;
+  cursor: pointer; /* Добавляем указатель курсора */
 
   &:hover {
     background-color: #d48800;
@@ -22,7 +22,7 @@
     width: 180px;
     height: 55px;
     padding: 8px 18px;
-    font-size: 8px;
+    font-size: 14px;
   }
 
   @media (max-width: 992px) {

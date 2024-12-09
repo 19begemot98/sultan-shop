@@ -5,9 +5,9 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 1920px;
+  width: calc(100% - 80px); /* Уменьшение ширины на 80px для отступов по 40px */
   height: 796px;
-  padding-left: 30px;
+  padding: 0 40px; /* Отступы по 40px с каждой стороны */
 
   .banner__image {
     position: absolute;
@@ -35,12 +35,12 @@
       color: #fff;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem; /* Увеличение размера шрифта */
         margin: 0;
       }
 
       p {
-        font-size: 1.2rem;
+        font-size: 1.5rem; /* Увеличение размера шрифта */
         margin: 10px 0;
       }
 
@@ -92,7 +92,7 @@
         .featureText {
           p {
             margin: 0;
-            font-size: 0.9rem;
+            font-size: 1rem; /* Увеличение размера шрифта */
           }
 
           p:first-child {
@@ -168,11 +168,11 @@
 
   @media (max-width: 576px) {
     .banner__content h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     .banner__content p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .catalogButton {

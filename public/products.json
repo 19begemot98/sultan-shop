@@ -4,8 +4,9 @@
         "title": "Акционные товары",
         "products": [
           {
-            "id": 1,
-            "image": "/image/aos-crystal.png",
+            "id": "1",
+            "image": "/image/sorti.svg",
+            "smallimage": "/image/bottle.png",
             "name": "AOS Ср-во для мытья посуды Апельсин+мята",
             "volume": "450 мл",
             "barcode": "4604040907548",
@@ -14,8 +15,9 @@
             "price": "48,76"
           },
           {
-            "id": 2,
-            "image": "/image/sort-apelsin.png",
+            "id": "2",
+            "image": "/image/aos.svg",
+            "smallimage": "/image/bottle.png",
             "name": "AOS средство для мытья посуды Crystal",
             "volume": "450 мл",
             "barcode": "4604040907548",
@@ -24,9 +26,22 @@
             "price": "48,76"
           },
           {
-            "id": 3,
-            "image": "/image/ariel-capsules.png",
+            "id": "3",
+            "image": "/image/arial.svg",
+            "smallimage": "/image/box.png",
             "name": "ARIEL Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+
+          },
+          {
+            "id": "4",
+            "image": "/image/bimax.svg",
+            "smallimage": "/image/box.png",
+            "name": "BIMAX Порошок стиральный Автомат 100 пятен COMPACT",
             "volume": "450 мл",
             "barcode": "4604040907548",
             "manufacturer": "Нэфис",
@@ -34,9 +49,43 @@
             "price": "48,76"
           },
           {
-            "id": 4,
-            "image": "/image/bimax-power.png",
+            "id": "5",
+            "image": "/image/sorti.svg",
+            "smallimage": "/image/bottle.png",
+            "name": "AOS Ср-во для мытья посуды Апельсин+мята",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": "6",
+            "image": "/image/bimax.svg",
+            "smallimage": "/image/box.png",
             "name": "BIMAX Порошок стиральный Автомат 100 пятен COMPACT",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": "7",
+            "image": "/image/aos.svg",
+            "smallimage": "/image/bottle.png",
+            "name": "AOS средство для мытья посуды Crystal",
+            "volume": "450 мл",
+            "barcode": "4604040907548",
+            "manufacturer": "Нэфис",
+            "brand": "AOS",
+            "price": "48,76"
+          },
+          {
+            "id": "8",
+            "image": "/image/arial.svg",
+            "smallimage": "/image/box.png",
+            "name": "ARIEL Автмат Гель СМС жидкое в растворимых капсулах Liquid Capsules Горный родник",
             "volume": "450 мл",
             "barcode": "4604040907548",
             "manufacturer": "Нэфис",
@@ -82,7 +131,7 @@
         "buttonText": "ПРИНЯТЬ УЧАСТИЕ"
       },
       {
-        "image": "/image/promotion.png",
+        "image": "/image/promotion2.png",
         "title": "Название Акции 2",
         "description": "Описание каталога в пару строк. Описание каталога в пару строк.",
         "buttonText": "ПОСМОТРЕТЬ КАТАЛОГ"

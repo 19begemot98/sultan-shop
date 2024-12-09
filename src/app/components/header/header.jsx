@@ -87,7 +87,7 @@ export default function Header() {
           src={Woman} 
           alt="contact woman" 
           width={80} 
-          height={40} 
+          height={80} 
           />
         </div>
         <div className={styles.vertical}></div>
